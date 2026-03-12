@@ -1,15 +1,8 @@
 body{
 margin:0;
-font-family:Poppins;
 background:black;
 color:white;
-}
-
-canvas{
-position:fixed;
-top:0;
-left:0;
-z-index:-1;
+font-family:Poppins;
 }
 
 .sidebar{
@@ -17,8 +10,9 @@ position:fixed;
 width:220px;
 height:100%;
 background:#050505;
-padding-top:40px;
 left:0;
+top:0;
+padding-top:30px;
 transition:0.4s;
 }
 
@@ -59,10 +53,10 @@ font-family:Orbitron;
 }
 
 .photo-box{
-width:250px;
-height:250px;
-margin:auto;
+width:230px;
+height:230px;
 border:3px solid #00ffee;
+margin:auto;
 overflow:hidden;
 }
 
@@ -81,7 +75,7 @@ margin-top:20px;
 }
 
 .home-icons i{
-font-size:28px;
+font-size:30px;
 margin:10px;
 color:#00ffee;
 }
@@ -90,17 +84,38 @@ color:#00ffee;
 background:#111;
 padding:20px;
 margin-top:20px;
-border:1px solid #00ffee33;
+border:1px solid #00ffee44;
+}
+
+.terminal{
+background:black;
+border:1px solid #00ffee;
+padding:20px;
+max-width:500px;
+margin:auto;
+}
+
+.terminal-input{
+display:flex;
+gap:10px;
+}
+
+.terminal-input input{
+flex:1;
+background:black;
+border:none;
+color:#00ffee;
+outline:none;
 }
 
 .footer{
 text-align:center;
-padding:30px;
+padding:40px;
 background:#050505;
 }
 
 .footer-icons i{
-font-size:28px;
+font-size:30px;
 margin:10px;
 color:#00ffee;
 }
@@ -123,10 +138,11 @@ z-index:9999;
 .hamburger span{
 height:4px;
 background:#00ffee;
-display:block;
 box-shadow:0 0 10px #00ffee;
 transition:0.3s;
 }
+
+/* ANIMATION */
 
 .hamburger.active span:nth-child(1){
 transform:rotate(45deg) translate(6px,6px);
@@ -158,6 +174,10 @@ left:0;
 
 .main{
 margin-left:0;
+}
+
+.name-title{
+font-size:42px;
 }
 
 }
