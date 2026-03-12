@@ -33,9 +33,10 @@ canvas {
 #loader-progress { height: 100%; width: 0%; background: #00ffee; }
 
 /* SIDEBAR (desktop default) */
+/* Sidebar default for desktop */
 .sidebar {
   position: fixed;
-  left: 0;                 /* always visible on desktop */
+  left: 0;   /* ensures visible on desktop */
   width: 220px;
   height: 100%;
   background: #020617;
@@ -143,22 +144,17 @@ canvas {
 /* RESPONSIVE DESIGN */
 /* ========================= */
 @media (max-width: 768px) {
-  /* Show hamburger on mobile */
-  .hamburger {
-    display: flex;
-  }
+  .hamburger { display: flex; }
 
-  /* Sidebar hidden by default on mobile */
   .sidebar {
-    left: -100%;            /* off-screen */
+    left: -100%;  /* hidden off-screen on mobile */
     top: 0;
     width: 220px;
     height: 100%;
     z-index: 1000;
   }
-  .sidebar.active {
-    left: 0;                /* slide in when active */
-  }
+  .sidebar.active { left: 0; }  /* slides in when active */
+}
 
   /* Main content adjusts */
   .main {
