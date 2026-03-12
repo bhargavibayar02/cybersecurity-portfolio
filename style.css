@@ -144,10 +144,12 @@ canvas {
 /* RESPONSIVE DESIGN */
 /* ========================= */
 @media (max-width: 768px) {
-  /* Show hamburger */
-  .hamburger {
-    display: flex;
+  .hamburger span {
+    background: #00ffee;   /* ensure visible color */
+    height: 4px;
+    width: 100%;
   }
+}
 
   /* Sidebar hidden by default */
   .sidebar {
