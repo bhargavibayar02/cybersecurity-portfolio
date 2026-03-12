@@ -1,0 +1,141 @@
+body{
+margin:0;
+font-family:Poppins;
+background:black;
+color:#00ffee;
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+position:fixed;
+width:220px;
+height:100%;
+background:#020617;
+padding:30px;
+}
+
+.logo{
+font-family:Orbitron;
+font-size:28px;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar li{
+margin:18px 0;
+}
+
+.sidebar a{
+color:#00ffee;
+text-decoration:none;
+}
+
+.main{
+margin-left:240px;
+padding:60px;
+}
+
+/* NAME */
+
+.name-title{
+font-family:Orbitron;
+font-size:70px;
+text-align:center;
+text-shadow:0 0 25px #00ffee;
+}
+
+/* PHOTO */
+
+.photo-box{
+width:260px;
+height:260px;
+margin:30px auto;
+border:4px solid #00ffee;
+box-shadow:0 0 25px #00ffee;
+overflow:hidden;
+}
+
+.photo-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* TEXT */
+
+.hero-text{
+text-align:center;
+font-size:22px;
+max-width:800px;
+margin:auto;
+}
+
+/* ICONS */
+
+.home-icons{
+text-align:center;
+margin-top:25px;
+}
+
+.home-icons a{
+font-size:36px;
+margin:0 20px;
+color:#00ffee;
+}
+
+/* CARD */
+
+.card{
+border:1px solid #00ffee;
+padding:25px;
+margin:25px 0;
+background:#020617;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 0 15px #00ffee;
+}
+
+/* TERMINAL */
+
+.terminal{
+border:2px solid #00ffee;
+padding:20px;
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+padding:70px 20px;
+border-top:2px solid #00ffee;
+margin-top:80px;
+background:#020617;
+}
+
+.footer-profile img{
+width:120px;
+height:120px;
+border-radius:10px;
+border:3px solid #00ffee;
+margin-bottom:10px;
+}
+
+.footer-icons a{
+font-size:40px;
+margin:0 20px;
+color:#00ffee;
+}
