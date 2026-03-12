@@ -1,33 +1,33 @@
-window.addEventListener("load", function(){
+window.onload = function(){
 
-let progress=document.getElementById("loader-progress");
-let percent=document.getElementById("loader-percent");
-let loader=document.getElementById("loader");
+let progress = document.getElementById("loader-progress");
+let percent = document.getElementById("loader-percent");
 
-let count=0;
+let loader = document.getElementById("loader");
+let site = document.getElementById("site");
 
-let loading=setInterval(function(){
+let count = 0;
+
+let loading = setInterval(function(){
 
 count++;
 
-if(progress){
-progress.style.width=count+"%";
-}
+progress.style.width = count + "%";
+percent.innerText = count + "%";
 
-if(percent){
-percent.innerText=count+"%";
-}
-
-if(count>=100){
+if(count >= 100){
 
 clearInterval(loading);
 
 setTimeout(function(){
-loader.style.display="none";
+
+loader.style.display = "none";
+site.style.display = "block";
+
 },500);
 
 }
 
-},30);
+},25);
 
-});
+};
