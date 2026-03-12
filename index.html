@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -37,9 +36,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 </div>
 
-<!-- WEBSITE CONTENT -->
+<!-- HAMBURGER MENU -->
 
-<div id="site">
+<div class="hamburger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
 
 <!-- MATRIX -->
 
@@ -116,27 +119,24 @@ Awaiting Opportunities to explore real-world problems.
 <div class="card">
 
 <p>
+
 I am B S Bhargavi, currently pursuing B.Tech in Cyber Security 
 and Cyber Forensics at Srinivas University Institute of 
-Engineering and Technology, Mukka with a CGPA of 9.65.
-</p>
+Engineering and Technology, Mukka with a CGPA of 9.65.</p>
 
 <p>
 I have maintained strong academic performance from school to 
-university securing 99.36% in SSLC and 97.5% in PUC.
-</p>
+university securing 99.36% in SSLC and 97.5% in PUC.</p>
 
 <p>
 My interests include ethical hacking, vulnerability analysis, 
 digital forensics, secure web development and blockchain 
-technologies.
-</p>
+technologies.</p>
 
 <p>
 I have practical experience with cybersecurity tools including 
 Wireshark, Nmap, Burp Suite, SQLMap, John the Ripper, Hashcat, 
-PhotoRec, OWASP Juice Shop and DVWA.
-</p>
+PhotoRec, OWASP Juice Shop and DVWA.</p>
 
 <p>
 I have also developed multiple web applications, blockchain 
@@ -194,21 +194,27 @@ applications and machine learning security projects.
 <div class="card">
 
 <b>Programming Languages</b>
+
 <p>Python, Java, C, JavaScript</p>
 
 <b>Web Development</b>
+
 <p>HTML, CSS, JavaScript, Node.js, MERN Stack</p>
 
 <b>Databases</b>
+
 <p>MongoDB, MySQL</p>
 
 <b>Blockchain</b>
+
 <p>Solidity, Ganache, Truffle</p>
 
 <b>Cybersecurity Tools</b>
+
 <p>Wireshark, Nmap, Burp Suite, SQLMap, John the Ripper, Hashcat</p>
 
 <b>Soft Skills</b>
+
 <p>Communication, Leadership, Problem Solving, Quick Learner</p>
 
 </div>
@@ -293,28 +299,6 @@ applications and machine learning security projects.
 
 </section>
 
-<!-- TERMINAL -->
-
-<section id="terminal">
-
-<h2>Cyber Terminal</h2>
-
-<div class="terminal">
-
-<div id="terminal-output"></div>
-
-<div class="terminal-input">
-
-<span>bhargavi@cyber:~$</span>
-
-<input id="terminal-input" type="text">
-
-</div>
-
-</div>
-
-</section>
-
 <!-- CONTACT -->
 
 <section id="contact">
@@ -337,10 +321,6 @@ style="border:0;">
 </section>
 
 </div>
-
-</div>
-
-<!-- FOOTER -->
 
 <footer class="footer">
 
@@ -368,9 +348,7 @@ style="border:0;">
 
 </footer>
 
-<script src="loader.js"></script>
-<script src="matrix.js"></script>
-<script src="terminal.js"></script>
+<script src="menu.js"></script>
 
 </body>
 </html>
