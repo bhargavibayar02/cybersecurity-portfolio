@@ -32,9 +32,10 @@ canvas {
 }
 #loader-progress { height: 100%; width: 0%; background: #00ffee; }
 
-/* SIDEBAR */
+/* SIDEBAR (desktop default) */
 .sidebar {
   position: fixed;
+  left: 0;                 /* always visible on desktop */
   width: 220px;
   height: 100%;
   background: #020617;
@@ -47,7 +48,7 @@ canvas {
 
 /* HAMBURGER MENU */
 .hamburger {
-  display: flex; /* hidden on desktop */
+  display: none;           /* hidden on desktop */
   cursor: pointer;
   width: 30px;
   height: 25px;
@@ -94,9 +95,7 @@ canvas {
   box-shadow: 0 0 25px #00ffee;
   overflow: hidden;
 }
-.photo-box img {
-  width: 100%; height: 100%; object-fit: cover;
-}
+.photo-box img { width: 100%; height: 100%; object-fit: cover; }
 
 /* HERO TEXT */
 .hero-text {
@@ -144,25 +143,29 @@ canvas {
 /* RESPONSIVE DESIGN */
 /* ========================= */
 @media (max-width: 768px) {
-  .hamburger span {
-    /* ensure visible color */
-    height: 4px;
-    width: 100%;
+  /* Show hamburger on mobile */
+  .hamburger {
+    display: flex;
   }
-}
 
-  /* Sidebar hidden by default */
+  /* Sidebar hidden by default on mobile */
   .sidebar {
-    left: -100%;
+    left: -100%;            /* off-screen */
     top: 0;
     width: 220px;
     height: 100%;
     z-index: 1000;
   }
-  .sidebar.active { left: 0; }
+  .sidebar.active {
+    left: 0;                /* slide in when active */
+  }
 
   /* Main content adjusts */
-  .main { margin-left: 0; padding: 20px; }
+  .main {
+    margin-left: 0;
+    padding: 20px;
+  }
+
   .photo-box { width: 200px; height: 200px; }
   .name-title { font-size: 2.5rem; }
 }
