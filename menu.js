@@ -1,9 +1,7 @@
 const hamburger = document.getElementById("hamburger");
 const sidebar = document.getElementById("sidebar");
 
-hamburger.addEventListener("click", function(){
-
-sidebar.classList.toggle("active");
-hamburger.classList.toggle("active");
-
+hamburger.addEventListener("click", function () {
+  sidebar.classList.toggle("active");
+  hamburger.classList.toggle("active");
 });
